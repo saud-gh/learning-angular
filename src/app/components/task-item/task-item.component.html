@@ -1,0 +1,5 @@
+<div (dblclick)="onToggle(task)">
+  <p [ngClass]="{ reminder: task.reminder }">
+    {{ task.title }} <button (click)="onDelete(task)">x</button>
+  </p>
+</div>

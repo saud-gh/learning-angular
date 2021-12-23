@@ -1,0 +1,22 @@
+<form (ngSubmit)="onSubmit()">
+  <label>
+    Task
+    <input
+      type="text"
+      name="text"
+      id="text"
+      placeholder="Add task"
+      [(ngModel)]="text"
+    />
+  </label>
+  <label>
+    Set Reminder
+    <input
+      type="checkbox"
+      name="reminder"
+      id="reminder"
+      [(ngModel)]="reminder"
+    />
+  </label>
+  <input type="submit" value="Save" />
+</form>
